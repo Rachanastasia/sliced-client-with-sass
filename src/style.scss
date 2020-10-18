@@ -1,3 +1,4 @@
+@use "sass:color";
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Raleway&display=swap');
 
 
@@ -21,6 +22,8 @@ $title-font: 'Raleway', sans-serif;
 $regular-font: 'Lato', sans-serif;
 
 $border-radius: 8px;
+$border-white: 2px solid $white-color;
+$border-accent: 2px solid $accent-color;
 
 
 
@@ -35,14 +38,20 @@ $border-radius: 8px;
 body{
     background-color: $white-color;
     line-height: 1.6;
-    font: 100% $regular-font;
+    font: $sm-font $regular-font;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    width: 100vw;
     header{
-        width: inherit;
+        width: 100vw;
+        height: 100px;
         background-color: $dark-color;
         display: flex;
         justify-content:space-between;
         align-items: center;
-        padding: $sm-spacer $med-spacer;
+        padding: $med-spacer;
         font: $lg-font $title-font;
         a{
             color: $white-color;
@@ -50,10 +59,10 @@ body{
         }
         button{
             padding: $sm-spacer $med-spacer;
+            color: $white-color;
             background-color: $mid-color;
             border: 2px solid $mid-color;
             border-radius: $border-radius;
-            color: $white-color;
             font-size: $sm-font;
         }
     }
@@ -64,10 +73,30 @@ body{
         align-items: center;
         width: 100%;
         height: inherit;
+        flex: 4;
         section{
             width:90%;
+            height: 100%;
+            
 
         }
+        button{
+            padding: $sm-spacer $med-spacer;
+            color: $black-color;
+            background-color: $accent-color;
+            border: 2px solid $accent-color;
+            border-radius: $border-radius;
+            font-size: $sm-font;
+        }
+    }
+    footer{
+        display: flex;
+        width: 100%;
+        background-color: $dark-color;
+        color: $white-color;
+        justify-content: flex-end;
+        padding: $med-spacer;
+        font-size: $sm-font;
     }
 }
 

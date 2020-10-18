@@ -1,0 +1,13 @@
+
+.ingredients_wrapper{
+    width: 90%;
+}
+.ing_item {
+    width: inherit;
+    padding: var(--spacer--sm) 0;
+}
+
+.ing_amount {
+    margin-right: var(--spacer--sm);
+    font-weight: 600;
+}

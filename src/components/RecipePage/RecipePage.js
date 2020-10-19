@@ -86,11 +86,11 @@ class RecipePage extends Component {
             : <section className='recipe_full'>
                 <div className='goBack_wrapper'>
                     <button
-                        className='goBack'
+                        className='goBack round'
                         onClick={() => this.props.history.push('/recipe')}
                         aria-label="Go back to the previous page"
                     >
-                        <VscReply className='arrow' />
+                        <VscReply className='arrow round-child' />
                     </button>
 
                 </div>
@@ -127,9 +127,9 @@ class RecipePage extends Component {
                     {originalLink}
                     <button
                         onClick={this.handleDeleteRecipe}
-                        className='delete_button'
+                        className='delete_button round'
                         aria-label="Delete this Recipe">
-                        <VscTrash className='trash' />
+                        <VscTrash className='trash round-child' />
                     </button>
 
                 </div>

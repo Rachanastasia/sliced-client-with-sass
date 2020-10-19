@@ -29,6 +29,7 @@ class AddRecipe extends Component {
             .replaceAll('-', ' ')
             .split('\n')
             .map(ing => {
+                console.log(parseInput(ing))
                 return parseInput(ing)
             })
 
@@ -76,11 +77,11 @@ class AddRecipe extends Component {
             <section className='add_section' >
                 <div className='goBack_wrapper'>
                     <button
-                        className='goBack'
+                        className='goBack round'
                         onClick={() => this.props.history.push('/recipe')}
                         aria-label="Go back to the previous page"
                     >
-                        <VscReply className='arrow' />
+                        <VscReply className='arrow round-child' />
                     </button>
                 </div>
                 <form className='AddRecipe_form'

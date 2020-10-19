@@ -21,8 +21,8 @@ class RecipeList extends Component {
 
 
                 <Link to='/add-recipe' tabIndex='-1'>
-                    <button className='add_recipe' aria-label="Add New Recipe">
-                        <VscAdd className='plus' />
+                    <button className='add_recipe round' aria-label="Add New Recipe">
+                        <VscAdd className='plus round-child' />
                     </button>
                 </Link>
 

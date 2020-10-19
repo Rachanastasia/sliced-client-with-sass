@@ -2,7 +2,6 @@ import TokenService from '../services/token-service'
 
 const UserRecipesApiService = {
 
-    //adjust to take in user_id
     getRecipes(user_id) {
 
         console.log(process.env.REACT_APP_API_ENDPOINT)
@@ -15,7 +14,6 @@ const UserRecipesApiService = {
             .catch(err => console.log(err))
     },
 
-    //adjust to take in user_id
     getFullRecipeById(id, user_id) {
         const getRecipe = fetch(`${process.env.REACT_APP_API_ENDPOINT}/recipes/${user_id}/${id}`, {
             headers: {

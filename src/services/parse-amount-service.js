@@ -21,7 +21,7 @@ export function parseAmount(str) {
     arr.forEach(val => {
 
 
-        if (val.match(/(?:[1-9][0-9]*|0)(?:\/[1-9][0-9]*)?/g)) {
+        if (val.match(/\d.\d|\d/g)) {
             if (val.split('').length > 2) {
                 let valArr = val.split('')
                 let newVal = getDecimal(valArr[0], valArr[2])
